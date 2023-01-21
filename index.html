@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio wbesite</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4fad743d5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class=" = " container">
+
+            <!-------navigation bar------>
+            <nav>
+                <img src="Images/Logo.png" class="logo" />
+                <ul id="side_menu">
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Lyle Robertson</span>!</h1>
+                <p> Mechanical Designer, & Prospect Software Engineer.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------about------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="Images/Profile.jpg" class="dp" />
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        3D CAD Mechanical Designer, Machinist, CNC programmer and Software Engineering student.<br />
+                        Aiming to make use of the all the experience and apply it to the world of Software Engineering
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!--------------tab titles and contents------------>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br />Python, Java, SQL, HTML5/.CSS, js</li>
+                            <li><span>Mechanical Design</span><br />Solidworks, Alphacam, AutoCad</li>
+                            <li><span>Intrapersonal</span><br />Teamwork, multitasking, attention to detail</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2021 - Present</span><br />Head Designer/CNC Programmer at M.C.R Precision Engineering</li>
+                            <li><span>May 2020 - Feb 2021</span><br />Lead Machinist at M.C.R Precision Engineering</li>
+                            <li><span>Sep 2019 - Apr 2020</span><br />Apprentice Machinist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br />Sofware Engineering Bootcamp at HyperionDev</li>
+                            <li><span>2015 - 2019</span><br />ND: Mechanical Engineering (Mechatronics)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <!-----------list of projects-------->
+            <div class="project-list">
+                <!-------Each project has image, description, link and a layer-->
+                <div class="projects">
+                    <img src="Images/financialcalculator.jpg" />
+                    <div class="layer">
+                        <h3>Financial Calculator</h3>
+                        <p>An investment and loan calculator</p>
+                        <a href="https://gitfront.io/r/user-5619450/Yd1ZCaUkLV9y/Capstone-Project-1-L1" /><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="Images/projmanager.jpg" />
+                    <div class="layer">
+                        <h3>Project Manager</h3>
+                        <p>Program that keeps track of project progress, duedates, and invoice amounts</p>
+                        <a href="https://gitfront.io/r/user-5619450/FVp86w9uxEgZ/Project_Manager/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="Images/inventorymanager.jpg" />
+                    <div class="layer">
+                        <h3>Inventory Manager</h3>
+                        <p>
+                            Stores data on the amount of items in the inventory. Add, removes, set on sale, view stock value using item specific codes/p>
+                            <a href="https://gitfront.io/r/user-5619450/vXqurtq2xDwQ/Inventory_Manager/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="Images/kmeans.jpg" />
+                    <div class="layer">
+                        <h3>Clustering</h3>
+                        <p>Using Kmeans clustering method to group specific data.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Projects in progress--------------------->
+
+    <div id="work-in-progress">
+        <div class="container">
+            <h1 class="sub-title">Projects In progress</h1>
+            <div class="current-work-list">
+                <div class="project">
+                    <img src="Images/POS.png" />
+                    <div class="layer1">
+                        <h3>POS/Inventory Manager</h3>
+                        <p>A System managing Inventory and POS. Created using Netbeans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!---------------------Contacts--------------->
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> lyle69.lr@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 061 696 6029</p>
+                            <div class="social-icons">
+                                <p><a href="http://www.linkedin.com/in/lyle-robertson-855b8617a"><i class="fa-brands fa-linkedin"></i></a> Click the icon !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------javascript for information in about me tabs
+        switches the information displayed to the tab clicked ont------>
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+            <!------opening and closing of side menu on smaller devices ----->
+            <script>
+                var side_menu = document.getElementById("side_menu");
+
+                function openmenu() {
+                    side_menu.style.right = "0";
+                }
+
+                function closemenu() {
+                    side_menu.style.right = "-150px";
+                }
+
+            </script>
+
+
+</body>
+</html>
